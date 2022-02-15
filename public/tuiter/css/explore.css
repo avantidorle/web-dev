@@ -68,11 +68,11 @@ input:focus {
     border-width: thin;
     padding: 15px;
     overflow:auto;
+    margin-right: 16px;
 }
 
 .wd-posts {
     margin-top: 70px;
-    margin-right: 16px;
 }
 
 .wd-topic, .wd-tuits {
@@ -95,14 +95,18 @@ input:focus {
 .wd-icon {
     width: 20px;
     height: 20px;
+    height: 20px;
     border-radius: 100px;
 }
 
-.wd-time {
+.wd-time, .wd-bm-user {
         font-size: 13px;
         color: rgb(110, 118, 125);
 }
-
+.wd-bm-paragraph {
+    font-size: 15px;
+        color: rgb(110, 118, 125);
+}
 .wd-image {
     padding-right: 16px;
 }
@@ -121,4 +125,58 @@ input:focus {
 .wd-padding {
     padding-top: 10px;
     padding-left: 5px;
+}
+
+.wd-bm-padding {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+.wd-bm-title {
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.wd-bm-avatar {
+    float:left;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+}
+
+.wd-bm-post {
+    float: right;
+    width: 506px;
+}
+
+.wd-main-content, .wd-bm-title{
+    font-size: 15px;
+}
+
+.wd-bookmark {
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+.wd-bm-image {
+    width: 504px;
+    height: 264px;
+    border-radius: 10px;
+
+}
+
+.wd-bm-content {
+    padding: 10px;
+}
+
+.wd-bm-title {
+    display: block;
+}
+
+.wd-bm-tabs {
+    margin-left: 70px;
+}
+
+.wd-red {
+    color: red;
 }
