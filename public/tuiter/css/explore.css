@@ -34,6 +34,15 @@ body {
     margin-right: 16px;
 }
 
+
+.wd-dark-post {
+    border: rgb(47, 51, 54) solid 2px;
+    padding: 15px;
+    overflow: auto;
+    margin-right: 16px;
+    margin-left: 0px;
+}
+
 .wd-float-left {
     float: left;
 }
@@ -128,4 +137,31 @@ i {
 .wd-padding-top-bottom {
         padding-top: 5px;
         padding-bottom: 5px;
+}
+
+
+
+.wd-dark-theme {
+    background-color: black;
+    color: white;
+}
+
+
+.wd-input-dark-mode {
+    background-color: rgb(47, 51, 54);
+    color: white;
+    border-color: rgb(47, 51, 54)
+}
+
+
+.wd-input-dark-focus {
+    outline-color:  rgb(47, 51, 54);
+}
+
+.wd-nav-link-active-dark {
+    background-color :rgb(47, 51, 54);
+}
+
+.wd-white{
+  color: white;
 }

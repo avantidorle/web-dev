@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuiter: Explore</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/explore.css">
+</head>
+<body class="wd-dark-theme">
+<div class="container">
+<div class="row">
+    <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+        <div></div>
+        <div class="wd-bottom-margin">
+            <div class="nav flex-column nav-pills" id="navigation-explore" role="tablist" aria-orientation="vertical">
+            <a class="wd-white nav-link rounded-0" id="v-pills-icon-tab" data-toggle="pill" href="#v-icon-notification" ><i class="fab fa-twitter"></i></a>
+                <a class="wd-white nav-link rounded-0" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">
+                    <div class="wd-float-left" width="20%">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Home</div>
+                </a>
+            <a class="wd-white nav-link active rounded-0" id="v-pills-explore-tab" data-toggle="pill" href="#v-pills-explore" role="tab" aria-controls="v-pills-explore" aria-selected="true">
+                <div class="wd-float-left" width="20%">
+                    <i class="fa fa-hashtag"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Explore</div>
+            </a>
+            <a class="wd-white nav-link rounded-0" id="v-pills-notification-tab" data-toggle="pill" href="#v-pills-notification" role="tab" aria-controls="v-pills-notification" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Notifications</div></a>
+            <a class="wd-white nav-link rounded-0" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fa fa-envelope"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Messages</div></a>
+            <a class="wd-white nav-link rounded-0" id="v-pills-bookmarks-tab" data-toggle="pill" href="#v-pills-bookmarks" role="tab" aria-controls="v-pills-bookmarks" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Bookmarks</div></a>
+
+            <a class="wd-white nav-link rounded-0" id="v-pills-lists-tab" data-toggle="pill" href="#v-pills-lists" role="tab" aria-controls="v-pills-lists" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fa-solid fa-list"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Lists</div></a>
+            <a class="wd-white nav-link rounded-0" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fa-solid fa-user"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Profile</div></a>
+
+            <a class="wd-white nav-link rounded-0" id="v-pills-more-tab" data-toggle="pill" href="#v-pills-more" role="tab" aria-controls="v-pills-more" aria-selected="false">
+                <div class="wd-float-left" width="20%"><i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">More</div></a>
+            </div>
+        </div>
+        <div>
+            <button class="wd-button rounded-pill"> Tweet </button>
+        </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+        <div class="row">
+            <div class="col-11">
+                <input class="wd-input-dark-mode wd-input-dark-focus   wd-border-round" type="text" placeholder="Search Tuiter"/>
+            </div>
+            <div class="col-1">
+                <a class="wd-float-left wd-font-size" href="./explore-settings.html">
+                <i class="fa fa-gear"></i></a>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="wd-nav-link-active-dark nav-link active" aria-current="page" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-sm-none d-xxl-block d-xl-block d-lg-block d-md-block" aria-current="page" href="#">Entertainment</a>
+            </li>
+        </ul>
+
+        <div class="wd-post-margin-top">
+            <div class="wd-post-img">
+                <img src="images/starship.jpeg" style="width: 100%;"/>
+                <div class="wd-bottom-left"><h5>SpaceX's Starship</h5></div>
+            </div>
+            <div class="row wd-dark-post">
+                <span class="wd-topic">Sports Trending</span>
+                <span class="wd-title">Joe Rogan</span>
+                <span class="wd-tuits">5,236 Tuits</span>
+            </div>
+            <div class="  row wd-dark-post">
+                <div class="col-9">
+                    <div class="wd-post-heading">
+                        <img class="wd-icon" src="./images/nyt.png"/>
+                        <span class="wd-author">The New York Times</span>
+                        <i class="fa fa-check-circle"></i>
+                        <span class="wd-time">. Yesterday</span>
+                    </div>
+                    <div class="wd-padding">
+                        <span>CNN's Cuomo conundrum: A star anchor with a brother in trouble</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="wd-post-image" src="./images/img1.jpeg"/>
+                </div>
+            </div>
+
+            <div class="  row wd-dark-post">
+                <div class="col-9">
+                    <span class="wd-topic">COVID-19 . LIVE</span>
+                    <div class="wd-padding">
+                        <span>COVID-19: News and updates for Massachusetts.</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="wd-post-image" src="./images/ma.jpeg"/>
+                </div>
+            </div>
+            <div class="  row wd-dark-post">
+                <div class="col-9">
+                    <div class="wd-post-heading">
+                        <img class="wd-icon" src="./images/blm.jpeg"/>
+                        <span class="wd-author">Bloomberg Opinion</span>
+                        <i class="fa fa-check-circle"></i>
+                        <span class="wd-time">. Yesterday</span>
+                    </div>
+                    <div class="wd-padding">
+                        <span>Thinking about getting a booster? Read this first.</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="wd-post-image" src="./images/booster.jpeg"/>
+                </div>
+            </div>
+            <div class="  row wd-dark-post">
+                <span class="wd-topic">Trending in United States</span>
+                <span class="wd-title">Wonder Bread</span>
+                <span class="wd-tuits">1,259 Tuits</span>
+            </div>
+            <div class="  row wd-dark-post">
+                <div class="col-9">
+                    <span class="wd-topic">Paloton . LIVE</span>
+                    <div class="wd-padding">
+                        <span>Peloton considers layoffs but denies a report it will pause bike production.</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="wd-post-image" src="./images/paleton.jpeg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-4 col-lg-4 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
+        <div class="wd-input-dark-mode wd-follow-padding wd-border-corner   wd-who-to-follow">
+            <div class="wd-follow-title-padding"><h5><strong>Who to follow</strong></h5></div>
+            <div class="wd-padding-top-bottom row">
+                <div class="col-2">
+                    <img class="wd-round" width="50px" height="50px" src="images/java.png">
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7">
+                    <span>Java</span>
+                    <i class="fa fa-check-circle"></i>
+                    <br>
+                    <span class="wd-handle">@java</span>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-3">
+                    <button class="wd-button rounded-pill"> Follow </button>
+                </div>
+            </div>
+            <div class="wd-padding-top-bottom row">
+                <div class="col-2">
+                    <img class="wd-round" width="50px" height="50px" src="images/relativity.jpeg">
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7">
+                    <span>Relativity Space</span>
+                    <i class="fa fa-check-circle"></i>
+                    <br>
+                    <span class="wd-handle">@relativitySpace</span>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-3">
+                    <button class="wd-button rounded-pill"> Follow </button>
+                </div>
+            </div>
+            <div class="wd-padding-top-bottom row">
+                <div class="col-2">
+                    <img class="wd-round" width="50px" height="50px" src="images/Alice.jpeg">
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7">
+                    <span>Alice</span>
+                    <br>
+                    <span class="wd-handle">@alice</span>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-3">
+                    <button class="wd-button rounded-pill"> Follow </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
