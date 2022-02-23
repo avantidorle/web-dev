@@ -1,0 +1,131 @@
+body {
+    padding-left: 16px;
+    padding-top: 10px;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.wd-border {
+        border-color: rgb(225, 232, 237);
+        border-style: solid;
+        border-width: 2px;
+}
+
+.wd-border-top {
+    border-top: rgb(225, 232, 237) solid 2px;
+}
+
+.wd-border-corner {
+    border-radius: 10px;
+}
+
+.wd-round {
+    border-radius: 50%;
+}
+
+.wd-post {
+    border: rgb(225, 232, 237);
+    border-style: solid;
+    border-width: thin;
+    padding: 15px;
+    overflow: auto;
+    margin-right: 16px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+input {
+    background-color: white;
+    color: rgb(47, 51, 54);
+    width: 90%;
+    height: 30px;
+    padding-left: 30px;
+}
+
+input:focus {
+    outline-color: rgb(29, 161, 242);
+}
+
+.wd-font-size {
+    font-size:24px;
+    color: #0d6efd;
+}
+
+.wd-tabs-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(29,161,242);
+
+}
+
+.wd-highlight {
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-margin-top {
+    margin-top: 10px;
+}
+
+.wd-post-img {
+    margin-right: 16px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.wd-bottom-left {
+ position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.wd-button {
+    height: 35px;
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+    border-style: solid;
+    width: 100%;
+}
+
+.wd-bottom-margin {
+    margin-bottom: 10px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.wd-black{
+  color: black;
+}
+
+.wd-handle {
+    font-size: 14px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-who-to-follow {
+    background-color: rgb(245, 248, 250);
+}
+
+.wd-follow-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wd-follow-title-padding {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.wd-padding-top-bottom {
+        padding-top: 5px;
+        padding-bottom: 5px;
+}

@@ -22,6 +22,7 @@ input {
     width: 90%;
     height: 30px;
     padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 input:focus {
@@ -69,6 +70,7 @@ input:focus {
     padding: 15px;
     overflow:auto;
     margin-right: 16px;
+    margin-left: 0px;
 }
 
 .wd-posts {
@@ -114,12 +116,13 @@ input:focus {
     width: 100px;
     height: 100px;
     border-radius: 15px;
-    float: right;
+    float: left;
 }
 
 .wd-post-content {
     padding: 5px;
     float: left;
+    width: 80%;
 }
 
 .wd-padding {
@@ -179,4 +182,10 @@ input:focus {
 
 .wd-red {
     color: red;
+}
+
+.wd-bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
