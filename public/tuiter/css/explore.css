@@ -34,6 +34,11 @@ body {
     margin-right: 16px;
 }
 
+.list-group-item {
+    background-color: rgb(47, 51, 54);
+    color: white;
+    border: #595C5E solid 2px;
+}
 
 .wd-dark-post {
     border: rgb(47, 51, 54) solid 2px;
@@ -50,8 +55,8 @@ body {
 input {
     background-color: white;
     color: rgb(47, 51, 54);
-    width: 90%;
-    height: 30px;
+    width: 100%;
+    height: 35px;
     padding-left: 30px;
 }
 
@@ -80,7 +85,6 @@ input:focus {
 }
 
 .wd-post-img {
-    margin-right: 16px;
     position: relative;
     text-align: center;
     color: white;
@@ -107,6 +111,11 @@ input:focus {
 
 i {
     margin-right: 10px;
+}
+
+
+.wd-list-group-item {
+
 }
 
 .wd-black{
