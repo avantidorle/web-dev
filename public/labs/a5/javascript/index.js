@@ -1,4 +1,5 @@
 //alert('Hello World!');
+
 console.log('Hello World!');
 
 console.log('%cVariables and Constants',"font-weight: bold; font-size: 12px")
@@ -301,8 +302,6 @@ const showHandler = () => {
 }
 hideBtn.click(hideHandler);
 showBtn.click(showHandler);
-
-
 
 
 

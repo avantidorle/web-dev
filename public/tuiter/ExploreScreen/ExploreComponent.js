@@ -1,9 +1,9 @@
-import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
+import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = (isExplore) => {
-    return(`
+    return(
            <div class="pt-2 row">
-            ${isExplore === 'explore'? `
+            {isExplore === 'explore'? `
               <div class="col-11"> ` : `<div class="col-12">` }
                  <input class="ps-4 mb-2 wd-input-dark-mode" type="text" placeholder="Search Tuiter"/>
               </div>
@@ -40,6 +40,6 @@ const ExploreComponent = (isExplore) => {
                     <div class="wd-bottom-left"><h4>SpaceX Starship</h4></div>
                 </div>
            ${PostSummaryList()}
-    `);
+    );
 }
 export default ExploreComponent;

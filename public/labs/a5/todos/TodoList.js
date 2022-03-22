@@ -4,9 +4,8 @@ const TodoList = () => {
     return(`
         <ul>
         ${
-            todos.map(todo => {
-                return(TodoItem(todo));
-            }).join('')
+            todos.map(todo => <h1>h</h1>
+            )
         }
         </ul>
     `);
