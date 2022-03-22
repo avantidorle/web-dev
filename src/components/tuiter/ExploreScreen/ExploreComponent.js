@@ -38,7 +38,7 @@ isExplore = "explore"
            : "" }
            { (isExplore === 'explore')
            ? <div className="wd-post-img">
-                            <img src={"./images/starship.jpeg"} width="100%"/>
+                            <img src={"/images/starship.jpeg"} width="100%"/>
                             <div className="wd-bottom-left"><h4>SpaceX Starship</h4></div>
                         </div>
            : ""}

@@ -6,7 +6,7 @@ const PostItem = (
                    "time": "24h",
                    "avatarIcon": "./images/nypostavatar.png",
                    "title": "Can`t sleep? Try these foods for a good night snooze https://trib.al/ZwVvTN4",
-                   "image": "./images/nycpost.jpeg",
+                   "image": "/images/nycpost.jpeg",
                    "contentTitle": "",
                    "content": "",
                    "comments": "15K",
