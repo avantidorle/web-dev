@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import '../css/index.css'
 
 const NavigationSidebar = (
@@ -7,6 +7,9 @@ const NavigationSidebar = (
     active
 }
 ) => {
+
+    const loc = useLocation();
+
     return(
         <>
             <div className="pt-2 list-group">
@@ -14,11 +17,11 @@ const NavigationSidebar = (
                     <i className="fab fa-twitter"></i>
             </Link>
 
-                <Link to="/tuiter" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter" className={`list-group-item ${loc.pathname === '/tuiter' ? 'active' : ''}`}>
                     <div className="wd-float-left" width="20%"><i className="fa-solid fa-house"></i></div>
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Home</div>
                 </Link>
-                <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                <Link to="/tuiter/explore" className={`list-group-item ${loc.pathname === '/tuiter/explore' ? 'active' : ''}`}>
                     <div className="wd-float-left" width="20%"><i className="fa fa-hashtag"></i></div>
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Explore</div>
                 </Link>
@@ -43,7 +46,7 @@ const NavigationSidebar = (
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Lists</div>
                 </a>
 
-                <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+                <Link to="/tuiter/profile" className={`list-group-item ${loc.pathname === '/tuiter/profile' ? 'active' : ''}`}>
                     <div className="wd-float-left" width="20%"><i className="fa-solid fa-user"></i></div>
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Profile</div>
                 </Link>

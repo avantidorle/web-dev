@@ -13,8 +13,7 @@ function App() {
       <div className="container">
 
       <Routes>
-         <Route path="/">
-           <Route path="labs"
+           <Route index
                   element={<Labs/>}/>
            <Route path="hello"
                   element={<HelloWorld/>}/>
@@ -28,7 +27,6 @@ function App() {
                     element={<ProfileScreen/>}/>
              <Route path="editProfile" element={<EditProfile/>}/>
 
-           </Route>
          </Route>
        </Routes>
       </div>

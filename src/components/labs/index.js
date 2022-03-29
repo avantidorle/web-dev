@@ -10,7 +10,7 @@ const Labs = () => {
     return(
       <>
         <Link to="/hello"> Hello</Link> |
-        <Link to="/tuiter/home">Tuiter</Link>
+        <Link to="/tuiter">Tuiter</Link>
         <h1>Labs</h1>
         <h4>A7 labs</h4>
         <ReduxExamples/>

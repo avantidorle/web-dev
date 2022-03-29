@@ -21,7 +21,6 @@ const EditProfile = () => {
   return (
     <>
     <div>
-
         <div className="row">
             <div className="col-1">
                 <Link to="/tuiter/profile">
