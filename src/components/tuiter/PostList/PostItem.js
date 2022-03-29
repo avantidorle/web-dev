@@ -1,21 +1,10 @@
-const PostItem = (
-{
-    post = {
-                   "userName": "New York Post",
-                   "handle": "nypost",
-                   "time": "24h",
-                   "avatarIcon": "./images/nypostavatar.png",
-                   "title": "Can`t sleep? Try these foods for a good night snooze https://trib.al/ZwVvTN4",
-                   "image": "/images/nycpost.jpeg",
-                   "contentTitle": "",
-                   "content": "",
-                   "comments": "15K",
-                   "likes": "5.5K",
-                   "retuits": "534",
-                   "reshares": "234"
-               }
-}
-) => {
+import {useDispatch} from "react-redux";
+const PostItem = ({post}) => {
+    const dispatch = useDispatch();
+      const deleteTuit = (post) => {
+        dispatch({type: 'delete-tuit', post})
+      };
+
     return (
         <li className="list-group-item pt-3">
             <div className="row">
@@ -34,6 +23,9 @@ const PostItem = (
                     </div>
                 </div>
             </div>
+            <i onClick={() =>
+                   deleteTuit(post)}
+                   className="fas fa-remove fa-pull-right"></i>
 
             <div className="card mt-4" width="100%">
                 <img src={post.image} className="card-img-top rounded-top" alt="..."/>
@@ -62,6 +54,7 @@ const PostItem = (
                     </div>
                 </div>
             </div>
+
         </li>
     )
 }

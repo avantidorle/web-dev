@@ -4,7 +4,7 @@ import '../css/index.css'
 
 const NavigationSidebar = (
 {
-    active='explore'
+    active
 }
 ) => {
     return(
@@ -14,7 +14,7 @@ const NavigationSidebar = (
                     <i className="fab fa-twitter"></i>
             </Link>
 
-                <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                     <div className="wd-float-left" width="20%"><i className="fa-solid fa-house"></i></div>
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Home</div>
                 </Link>
@@ -43,10 +43,10 @@ const NavigationSidebar = (
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Lists</div>
                 </a>
 
-                 <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="#">
+                <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                     <div className="wd-float-left" width="20%"><i className="fa-solid fa-user"></i></div>
                     <div className="ps-2 wd-float-left d-lg-none d-md-none d-sm-none d-xl-block">Profile</div>
-                </a>
+                </Link>
 
                  <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="#">
                      <div className="wd-float-left" width="20%"><i className="fa-solid fa-ellipsis-v"></i></div>

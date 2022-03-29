@@ -56,3 +56,42 @@
      font-size: 15px;
      color: rgb(110, 118, 125);
  }
+
+ .wd-whats-happening-textarea {
+     background-color: #222;
+     border: none;
+     width: 100%;
+     height: 50px;
+     color: white;
+ }
+
+  .wd-profile-textarea {
+      background-color: #222;
+      border: none;
+      width: 100%;
+      color: white;
+  }
+
+ .wd-whats-happening-button {
+     width: 10px;
+ }
+
+ .wd-profile-picture {
+    border-radius: 50px;
+
+ }
+
+.wd-profile-details {
+    float: left;
+    padding-right: 10px;
+}
+
+.wd-edit-button {
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+
+.wd-bg-dark, input:focus {
+    background-color: #222;
+}
