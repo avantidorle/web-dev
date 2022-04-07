@@ -1,22 +1,17 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../actions/tuits-actions";
 import '../css/index.css';
 
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening]
-      = useState('');
+  const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
   const dispatch = useDispatch();
-  const tuitClickHandler = () => {
-  dispatch({type: 'create-tuit',
-     tuit: whatsHappening
-   });
-  }
+
   return (
     <>
     <div>
-      <textarea className="wd-whats-happening-textarea" placeholder="What's Happening" value={whatsHappening}
-               onChange={(event) =>
-        setWhatsHappening(event.target.value)}>
+      <textarea className="wd-whats-happening-textarea mt-2 ps-2" placeholder="What's Happening"
+               onChange={(e) => setNewTuit({...newTuit, title: e.target.value})}>
       </textarea>
                 <div className="d-flex flex-row justify-content-between">
                           <div>
@@ -25,7 +20,8 @@ const WhatsHappening = () => {
                               <i className="fas fa-smile pe-2" style={{color: "#2a9fd6"}}></i>
                               <i className="fas fa-calendar" style={{color: "#2a9fd6"}}></i>
                           </div>
-                          <button className="btn btn-primary btn-block rounded-pill" onClick={tuitClickHandler}>
+                          <button className="btn btn-primary btn-block rounded-pill mb-2"
+                          onClick={() => createTuit(dispatch, newTuit)}>
                               Tuit
                           </button>
                 </div>
